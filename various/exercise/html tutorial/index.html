@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="reset.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ</title>
+    <!--https://www.youtube.com/watch?v=dOgFkZiVC8w-->
+
+    <style>
+        @font-face {
+            font-family: "Überschrift";
+            src: url(ressources/fonts/SairaCondensed-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: "Body";
+            src: url(ressources/fonts/SairaCondensed-Regular.ttf);
+        }
+
+        body {
+            font-family: "Body";
+            color: white;
+            background-image: linear-gradient(to bottom right, green, yellow);
+            background-repeat:no-repeat;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .header-image {
+            width: 100%;
+        }
+
+        .headline {
+            color: white;
+            font-family: "Überschrift";
+            font-size: 4vh;
+        }
+
+        .image-container {
+
+            background-color: white;
+            padding: 16px;
+            display: grid;
+            align-items: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin-left: 16px;
+            font-size: 1.8em;
+            font-weight: 650;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .text-highlight {
+            color: yellow;
+            font-size: 5vh;
+        }
+
+        .text-container {
+            background-color: black;
+            padding: 8px;
+            font-size: 3vh;
+        }
+
+        .maps-container {
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .maps-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 16px;
+            width: 30%;
+        }
+
+        .maps-frame {
+            border: 0;
+            height: 350px;
+            width: 70%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1 class="headline">KATZENFOTOS
+            <br>
+            <span class="text-highlight">HOHENEMS</span>
+        </h1>
+
+        <div>
+            <a href="">Infos</a>
+            <a href="">Preise</a>
+            <a href="">Termin</a>
+            <a href="">Standort</a>
+        </div>
+    </div>
+
+
+
+    <div class="image-container">
+        <img class="header-image" src="ressources/img/shari1.JPG">
+
+        <div class="text-container">
+            Best Cat in EMS
+        </div>
+
+        <div class="maps-container">
+        <iframe class="maps-frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.88569922307!2d9.594534115859418!3d47.23838162133437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b399c00ca1ef9%3A0x4dfde65076021187!2sKatzenturm!5e0!3m2!1sde!2sat!4v1670959730169!5m2!1sde!2sat"
+              allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <div class="text-container maps-right">
+        Miau!!!<br>
+        Miau!!!<br>
+        Miau!!!<br>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
