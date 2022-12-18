@@ -17,3 +17,31 @@
     margin-left: 26px;
 }
 
+.header-brand-wrapper {
+    margin-top: 50px;
+    float: left;
+}
+
+.header-brand {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 150%;
+    display: block;
+    margin-top: -10%;
+}
+
+.slogan {
+    color: white;
+    text-align: center;
+}
+
+.slogan-top {
+    font-size: 170%;
+    font-weight: lighter;
+}
+
+.slogan-bottom {
+    font-size: 250%;
+    font-weight: bold;
+}
