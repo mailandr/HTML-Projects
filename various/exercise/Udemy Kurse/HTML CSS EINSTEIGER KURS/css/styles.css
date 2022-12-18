@@ -1,0 +1,6 @@
+.header {
+    height: 620px;
+    background-image: url("../resources/img/header-background.jpg");
+    background-size: cover;
+    background-position: 50% 62%;
+}
