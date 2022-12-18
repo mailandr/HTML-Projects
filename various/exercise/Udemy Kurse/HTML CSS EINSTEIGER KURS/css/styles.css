@@ -4,3 +4,16 @@
     background-size: cover;
     background-position: 50% 62%;
 }
+
+.header-navbar-links {
+    color: white;
+    float: right;
+    margin-top: 50px;
+}
+
+.header-navbar-links li {
+    float: left;
+    list-style-type: none;
+    margin-left: 26px;
+}
+
