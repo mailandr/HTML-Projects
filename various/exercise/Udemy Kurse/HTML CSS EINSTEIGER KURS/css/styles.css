@@ -1,12 +1,10 @@
 body {
-    font-family: sans-serif';
-
+    font-family: sans-serif'
 }
 
 p {
     color: rgb(117, 117, 117);
 }
-
 
 /**
 * Header - Bereich
@@ -174,8 +172,7 @@ p {
 }
 
 .client-quote p {
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px;  
 }
 
 .client-quote-second p {
@@ -241,4 +238,126 @@ p {
     margin-bottom: 50px;
     display: flex;
     align-items: center;
+}
+/**
+*   Team - Bereich
+*/
+
+.team {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.team h2,
+.team p {
+    text-align: center;
+}
+
+.team h2 {
+    margin-bottom: 0px;
+}
+
+.team p {
+    margin-bottom: 10px;
+}
+.team-img {
+    max-width: 85%;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.team-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.team-name {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+
+.team-icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.team-icon {
+    display: block;
+    width: 34px;
+    height: 34px;
+    fill: white;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    min-width: 34px;
+}
+
+.team-icon svg {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.team-slogan {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    color: rgb(220, 220, 220)
+}
+
+/**
+* Kontakt - Bereich
+*/
+
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(118, 143, 197);
+    color: white;
+}
+
+.contact p {
+    color: white;
+}
+
+.contact h2 {
+    margin-bottom: 5px;
+}
+
+.contact-links {
+display: grid;
+grid-template-columns: 50% 50%;
+}
+
+.contact-links-rows {
+    display: flex;
+    fill: white;
+    gap: 15px;
+}
+
+.contact-links-rows p {
+    height: 2em;
+}
+
+.contact-links-rows svg {
+    min-width: 24px;
+}
+
+.contact-input {
+    color: black;
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.contact-message {
+    height: 120px;
+}
+
+input.contact-submit[type="submit"] {
+    background-color: white;
 }
