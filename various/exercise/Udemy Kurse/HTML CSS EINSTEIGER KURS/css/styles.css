@@ -25,6 +25,8 @@ p {
 
 .header-navbar-links a:hover {
     text-decoration: underline;
+    color: rgb(220, 220, 220);
+    transition: all 0.5s;
 }
 
 .header-navbar-links li {
@@ -125,6 +127,11 @@ p {
     height: 80px;
     background-color: rgb(30, 30, 30);
     border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.feature-icon:hover {
+    transform: rotate(360deg);
 }
 
 .feature-text {
@@ -388,6 +395,7 @@ input.contact-submit[type="submit"] {
 input.contact-input:focus {
     border-color: black;
     background-color: white;
+    transition: all 0.5s;
 }
 
 /**
