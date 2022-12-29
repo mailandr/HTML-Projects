@@ -361,3 +361,29 @@ grid-template-columns: 50% 50%;
 input.contact-submit[type="submit"] {
     background-color: white;
 }
+
+.contact-submit {
+    margin-bottom: 0px;
+}
+
+.formular {
+    margin-bottom: 0px;
+}
+
+/**
+* Footer - Bereich
+*/
+
+.footer {
+    background-color: rgb(118, 143, 197);
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer-hr {
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
