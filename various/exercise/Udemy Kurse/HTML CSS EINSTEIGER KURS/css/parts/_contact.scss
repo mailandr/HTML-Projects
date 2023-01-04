@@ -1,0 +1,73 @@
+
+
+/**
+* Kontakt - Bereich
+*/
+
+.contact {
+    padding-top: $landing-padding;
+    padding-bottom: $landing-padding;
+    background-color: rgb(118, 143, 197);
+    color: white;
+}
+
+.contact p {
+    color: white;
+}
+
+.contact h2 {
+    margin-bottom: 5px;
+}
+
+.contact-links {
+display: grid;
+grid-template-columns: 50% 50%;
+}
+
+.contact-links-rows {
+    display: flex;
+    fill: white;
+    gap: 15px;
+}
+
+.contact-links-rows p {
+    height: 2em;
+}
+
+.contact-links-rows svg {
+    min-width: 24px;
+}
+
+.contact-input {
+    color: black;
+    width: 100%;
+    margin-bottom: 28px;
+    background-color: rgb(230, 230, 230);
+}
+
+.contact-message {
+    height: 120px;
+}
+
+input.contact-input[type="text"] {
+    background-color: rgb(230, 230, 230);
+}
+
+input.contact-submit[type="submit"] {
+    background-color: white;
+}
+
+.contact-submit {
+    margin-bottom: 0px;
+}
+
+.formular {
+    margin-bottom: 0px;
+}
+
+.contact-input:focus,
+input.contact-input:focus {
+    border-color: black;
+    background-color: white;
+    transition: all 0.5s;
+}

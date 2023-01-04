@@ -1,0 +1,35 @@
+
+/**
+* Features - Bereich
+*/
+
+.features {
+    padding-top: $landing-padding;
+    padding-bottom: $landing-padding - 25px;
+}
+
+.feature-icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.feature-icon:hover {
+    transform: rotate(360deg);
+}
+
+.feature-text {
+    margin-left: 100px;
+}
+
+.feature-text h5 {
+    margin-bottom: 8px;
+    font-size: 140%;
+    color: rgb(30, 30, 30);
+}
