@@ -17,6 +17,11 @@
     justify-content: center;
     margin-top: -15px;
     margin-bottom: 0px;
+    display: none;
+
+    @media ($bp-larger-than-phablet) {
+        display: block;
+    }
 }
 
 .service-grey {

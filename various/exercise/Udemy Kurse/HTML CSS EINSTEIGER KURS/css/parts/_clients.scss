@@ -25,24 +25,38 @@
     height: 240px;
     border-radius: 50%;
     border: 5px solid white;
+    display: none;
+
+    @media ($bp-larger-than-tablet) {
+        display: block;
+
+    }
 }
 
 .client-quote,
 .client-quote-second {
     border: 2px solid rgb(235, 235, 235);
     background-color: white;
-    padding-left: 75px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-right: 75px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-right: 25px;
     border-radius: 3px;
     font-size: 130%;
     font-style: italic;
     position: relative;
+
+    @media ($bp-larger-than-tablet) {
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+    }
 }
 
 .client-quote p {
-    margin-bottom: 5px;  
+    margin-bottom: 5px;
 }
 
 .client-quote-second p {
@@ -55,57 +69,75 @@
     color: rgb(119, 147, 197);
 }
 
-.client-quote::before,
-.client-quote::after {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    top: 50%;
+@media ($bp-larger-than-tablet) {
+
+    .client-quote::before,
+    .client-quote::after {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 50%;
+    }
+
+    .client-quote::after {
+        left: -26px;
+        margin-top: -13px;
+        border: 13px solid transparent;
+        border-right: 13px solid white;
+    }
+
+    .client-quote::before {
+        left: -30px;
+        margin-top: -15px;
+        border: 15px solid transparent;
+        border-right: 15px solid rgb(235, 235, 235);
+    }
+
+    .client-quote-second::before,
+    .client-quote-second::after {
+        content: "";
+        display: block;
+        width: inherit;
+        height: 0px;
+        position: absolute;
+        top: 50%;
+    }
+
+    .client-quote-second::after {
+        right: -26px;
+        margin-top: -13px;
+        border: 13px solid transparent;
+        border-left: 13px solid white;
+    }
+
+    .client-quote-second::before {
+        right: -30px;
+        margin-top: -15px;
+        border: 15px solid transparent;
+        border-left: 15px solid rgb(235, 235, 235);
+    }
 }
 
-.client-quote::after {
-    left: -26px;
-    margin-top: -13px;
-    border: 13px solid transparent;
-    border-right: 13px solid white;
-}
-
-.client-quote::before {
-    left: -30px;
-    margin-top: -15px;
-    border: 15px solid transparent;
-    border-right: 15px solid rgb(235, 235, 235);
-}
-
-.client-quote-second::before,
-.client-quote-second::after {
-    content: "";
-    display: block;
-    width: inherit;
-    height: 0px;
-    position: absolute;
-    top: 50%;
-}
-
-.client-quote-second::after {
-    right: -26px;
-    margin-top: -13px;
-    border: 13px solid transparent;
-    border-left: 13px solid white;
-}
-
-.client-quote-second::before {
-    right: -30px;
-    margin-top: -15px;
-    border: 15px solid transparent;
-    border-left: 15px solid rgb(235, 235, 235);
-}
-
-.client-gap{
+.client-gap {
     margin-top: 50px;
     margin-bottom: 50px;
-    display: flex;
-    align-items: center;
+
+    @media ($bp-larger-than-phablet) {
+        display: flex;
+    }
+}
+
+.client-quote-image {
+    width: 50px;
+    height: 50px;    
+    border-radius: 50%;
+    border: 3px solid rgb(235, 235, 235);
+    float: left;
+    margin-right: 5px;;
+
+    @media ($bp-larger-than-tablet) {
+        display: none;
+    }
 }

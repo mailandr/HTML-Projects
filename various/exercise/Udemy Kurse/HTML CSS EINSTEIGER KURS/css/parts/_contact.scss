@@ -1,5 +1,3 @@
-
-
 /**
 * Kontakt - Bereich
 */
@@ -20,8 +18,16 @@
 }
 
 .contact-links {
-display: grid;
-grid-template-columns: 50% 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    @media ($bp-larger-than-phablet){
+        grid-template-columns: 100%;
+    }
+
+    @media ($bp-larger-than-desktop) {
+        grid-template-columns: 50% 50%;
+    }
 }
 
 .contact-links-rows {
