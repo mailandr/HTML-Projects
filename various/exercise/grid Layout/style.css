@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    color: #fff;
+
+    font-size: 30px;
+}
+
+.container {
+    background-color: yellowgreen;
+    height: 90vh;
+    margin: 30px;
+}
+
+.grid-layout {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(3, 1fr) 250px;
+    background-color: yellow;
+    gap: 20px;
+    font-family: sans-serif;
+}
+
+.sections {
+    background-color: red;
+    padding: 20px;
+}
+
+.header {
+    grid-column: 1/-1;
+}
+
+.sidebar {
+    grid-row: 2/ 8;
+    grid-column: 4/-1;
+}
+
+.small-box {
+    grid-row: 2/4;
+}
+
+.main-content {
+    grid-column: 1 / 4;
+    grid-row: 4/8;
+}
+
+.footer {
+    grid-column: 1/-1;
+}
